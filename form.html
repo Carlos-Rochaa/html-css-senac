@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <a class="home" href="index.html">Retonar para a página inicial</a>
+      <h1>Formulário para contato</h1>
+      <form action="">
+        <div class="campo">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="Nome"
+            required
+            autocomplete="off"
+            placeholder="Digite o seu nome"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            required
+            placeholder="pessoa@email.com"
+          />
+        </div>
+
+        <div class="campo">
+          <p>Deixe sua mensagem</p>
+          <label for="mensagem" id="mensagem"></label>
+          <textarea
+            name="mensagem"
+            id="mensagemInput"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <button id="botao" type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
